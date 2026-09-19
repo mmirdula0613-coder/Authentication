@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f4f7f6;
+  color: #18221f;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+
+/* =========================
+   AUTH PAGE
+========================= */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background:
+    radial-gradient(
+      circle at top left,
+      #dceee7,
+      transparent 35%
+    ),
+    #f4f7f6;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  padding: 42px;
+  border-radius: 22px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+
+.logo span {
+  color: #27836b;
+}
+
+.auth-card h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: #71807b;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+  margin-top: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #d8e0dd;
+  border-radius: 11px;
+  outline: none;
+  transition: 0.2s;
+  background: #fbfcfc;
+}
+
+.input-group input:focus {
+  border-color: #27836b;
+  box-shadow: 0 0 0 3px rgba(39, 131, 107, 0.1);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.primary-button {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 11px;
+  background: #18221f;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primary-button:hover {
+  background: #27836b;
+}
+
+.primary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   SWITCH
+========================= */
+
+.switch-text {
+  text-align: center;
+  margin-top: 24px;
+  color: #71807b;
+  font-size: 14px;
+}
+
+.link-button {
+  border: none;
+  background: none;
+  color: #27836b;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.loading-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #f4f7f6;
+}
+
+.dashboard-card {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 45px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dcefe8;
+  color: #27836b;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.dashboard-card h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.user-info {
+  margin-top: 30px;
+  border: 1px solid #e2e8e5;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px;
+  border-bottom: 1px solid #e2e8e5;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-row span {
+  color: #71807b;
+}
+
+.info-row strong {
+  text-align: right;
+}
+
+.authenticated {
+  color: #27836b;
+}
+
+.logout-button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: 1px solid #d8e0dd;
+  background: white;
+  border-radius: 11px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.logout-button:hover {
+  background: #f5f7f6;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+  .auth-card,
+  .dashboard-card {
+    padding: 28px;
+  }
+
+  .auth-card h1,
+  .dashboard-card h1 {
+    font-size: 27px;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .info-row strong {
+    text-align: left;
+  }
+}
